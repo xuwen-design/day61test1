@@ -1,0 +1,29 @@
+git add .
+git add [dir]
+git add [file1]
+ 可以将文件添加到index暂存区交给git管理；
+git diff 详细信息
+查看暂存区和本地磁盘的区别
+git status 
+基本状态
+git commit -m ‘’
+将文件添加到仓库中
+git reset Head
+取消已缓存的内容
+git rm
+简单删除
+git checkout . 
+git checkout file
+git checkout Head file(本地工作区文件没了，重新引入)
+
+git clone 从远程仓库clone一个副本（输入地址后会自动关联仓库）
+
+git remote add origin master(节点名) 地址
+(自动设定远程仓库名字)
+git push origin master
+
+git remote -v 
+查看当前远程仓库
+
+git pull <远程主机名> <远程分支名>:<本地分支名>    ||  git pull origin master
+从远程仓库下载数据
