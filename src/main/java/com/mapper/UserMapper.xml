@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+namespace就是用来隔离sql语句的
+-->
+<mapper namespace="com.ssm.mapper.UserMapper" >
+ <resultMap id="BaseMapper1" type="use">
+     <id property="uid" column="uid"/>
+     <result column="password" property="pwd"/>
+     <result property="uname" column="username"/>
+     <result column="birthday" property="birthday"/>
+ </resultMap>
+<select id="selectAll" resultMap="BaseMapper1">
+    select * from users
+</select>
+</mapper>
